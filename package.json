@@ -1,0 +1,28 @@
+{
+  "name": "imogen",
+  "version": "1.0.0",
+  "description": "Image Classification",
+  "main": "source/Imogen.js",
+  "scripts": {
+    "start": "node source/Imogen.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenvelozo/imogen.git"
+  },
+  "keywords": [
+    "image",
+    "classification",
+    "processing"
+  ],
+  "author": "steven velozo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevenvelozo/imogen/issues"
+  },
+  "homepage": "https://github.com/stevenvelozo/imogen#readme",
+  "dependencies": {
+    "lwip": "0.0.8"
+  }
+}
