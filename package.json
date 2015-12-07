@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/stevenvelozo/imogen#readme",
   "dependencies": {
-    "lwip": "0.0.8"
+    "get-pixels": "^3.2.3",
+    "quantifier": "^1.0.0"
   }
 }
