@@ -42,7 +42,9 @@ var Imogen = function()
 				for (var x = 0; x < tmpDimensions[0]; x++)
 					for (var y = 0; y < tmpDimensions[1]; y++)
 					{
-						tmpRed.addBin(pixels.get(x,y,2));
+						var tmpPixel = pixels.get(x,y,2);
+						if (tmpPixel > 0)
+							tmpRed.addBin(tmpPixel);
 					}
 
 				console.log('  > Done Getting Histogram in ('+tmpDisplayOperationTime+'ms)');
@@ -52,7 +54,7 @@ var Imogen = function()
 
 				tmpOperationTime = tmpDisplayOperationEndTime - tmpOperationStartTime;
 				console.log('  > Total Parse Time '+tmpOperationTime+'ms');
-				tmpRed.renderReport('HorizontalBarLog10');
+				tmpRed.renderReport('VerticalBar');
 			}
 		);
 
